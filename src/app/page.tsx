@@ -29,7 +29,7 @@ export default function Home() {
   return (
     <div className="min-h-screen max-h-screen px-3">
       <div className="w-full h-[20vh]">
-        <h1 className="text-2xl text-center">Hi! I'm Barry!</h1>
+        <h1 className="text-2xl text-center">Hi! I&apos;m Barry!</h1>
         <Image
           src="/barry.png"
           alt="Barry the chatbot"
