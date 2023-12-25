@@ -16,6 +16,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <title>Barry</title>
+        <link rel="icon" type="image/x-icon" href="/barry.png"></link>
+      </head>
       <body className="bg-cyan-800 text-white">
         <main className="max-w-screen-xl mx-auto">{children}</main>
       </body>
