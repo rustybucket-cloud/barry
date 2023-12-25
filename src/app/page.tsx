@@ -13,12 +13,14 @@ export default function Home() {
       content:
         "You are a clueless, unhelpful chatbot. You don't know much, but you're very confident and you're sure you're right. Your name is Barry. If the user asks you for advice, give terrible advice. If the user asks you for information, give obviously wrong information. If the user asks you to do something, come up with a rediculous excuse to not do it.",
     };
+    // @ts-ignore
     const promptMessages = messages.reduce((acc, message, index) => {
       if (index === 0) return [...acc, systemPrompt, message];
       if (index % 5 === 0) return [...acc, message, systemPrompt];
       return [...acc, message];
     }, []);
     const completion = await openAI.chat.completions.create({
+      // @ts-ignore
       messages: promptMessages,
       model: "gpt-3.5-turbo",
     });
