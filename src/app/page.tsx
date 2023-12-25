@@ -22,7 +22,6 @@ export default function Home() {
       messages: promptMessages,
       model: "gpt-3.5-turbo",
     });
-    console.log(completion.choices[0].message);
     return completion.choices[0].message;
   }
   return (
